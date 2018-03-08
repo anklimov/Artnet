@@ -36,6 +36,9 @@ THE SOFTWARE.
 #elif defined(ESP32)
     #include <WiFi.h>
     #include <WiFiUdp.h>
+#elif defined (Wiz5500)
+    #include <Ethernet2.h>
+    #include <EthernetUdp2.h>
 #else
     #include <Ethernet.h>
     #include <EthernetUdp.h>
