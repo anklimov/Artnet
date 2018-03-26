@@ -24,9 +24,8 @@ THE SOFTWARE.
 
 #ifndef ARTNET_H
 #define ARTNET_H
-
+//#define Wiz5500
 #include <Arduino.h>
-
 #if defined(ARDUINO_SAMD_ZERO)
     #include <WiFi101.h>
     #include <WiFiUdp.h>
@@ -36,6 +35,7 @@ THE SOFTWARE.
 #elif defined(ESP32)
     #include <WiFi.h>
     #include <WiFiUdp.h>
+
 #elif defined (Wiz5500)
     #include <Ethernet2.h>
     #include <EthernetUdp2.h>
